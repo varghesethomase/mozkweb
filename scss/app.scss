@@ -38,6 +38,7 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
 .container-fluid{
   width: 100%;
   margin-left: auto;
@@ -52,12 +53,42 @@
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background-color: rgba(0,0,0,0.3);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5b5b5b+64,0a0a0a+100 */
+background: rgb(91,91,91); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(91,91,91,1) 64%, rgba(10,10,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(91,91,91,1)), color-stop(100%,rgba(10,10,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#0a0a0a',GradientType=0 ); /* IE6-9 */
+  opacity: 0.5;
+  z-index: 100;
+  color: #FFF;
+}
+.overlay-content{
+  z-index: 101;
+  position: relative;
+  padding-top: 60px;
+  h2{
+    color: #FFF;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  .description{
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+    color: #F9F9F9;
+    line-height: 1.6em;
+    font-weight: 300;
+  }
 }
 .cover-content{
   padding-top: 40vh;
   width: 500px;
   margin-right: 20px;
+  height: 100vh;
   .mozk-logo{
     width: 130px;
     height: 130px;
@@ -99,5 +130,12 @@
         text-align: center;
       }
     }
+  }
+}
+.content-div{
+  position: relative;
+  .cover-image{
+    background: transparent url("../images/cover-photos/cover-photo-1.jpg") repeat scroll center center / cover;
+    height: 500px;
   }
 }
