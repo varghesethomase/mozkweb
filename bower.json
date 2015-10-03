@@ -1,6 +1,7 @@
 {
   "name": "foundation-libsass-template",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "scrollreveal": "scrollReveal.js#~2.3.2"
   }
 }
