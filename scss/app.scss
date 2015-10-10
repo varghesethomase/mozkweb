@@ -54,41 +54,41 @@
   top: 0px;
   bottom: 0px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5b5b5b+64,0a0a0a+100 */
-background: rgb(91,91,91); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(91,91,91,1) 64%, rgba(10,10,10,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(91,91,91,1)), color-stop(100%,rgba(10,10,10,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(91,91,91,1) 64%,rgba(10,10,10,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#0a0a0a',GradientType=0 ); /* IE6-9 */
-  opacity: 0.5;
+  background: rgba(76,76,76,1);
+background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 45%, rgba(44,44,44,1) 59%, rgba(17,17,17,1) 72%, rgba(0,0,0,1) 79%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(45%, rgba(71,71,71,1)), color-stop(59%, rgba(44,44,44,1)), color-stop(72%, rgba(17,17,17,1)), color-stop(79%, rgba(0,0,0,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 45%, rgba(44,44,44,1) 59%, rgba(17,17,17,1) 72%, rgba(0,0,0,1) 79%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 45%, rgba(44,44,44,1) 59%, rgba(17,17,17,1) 72%, rgba(0,0,0,1) 79%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 45%, rgba(44,44,44,1) 59%, rgba(17,17,17,1) 72%, rgba(0,0,0,1) 79%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 45%, rgba(44,44,44,1) 59%, rgba(17,17,17,1) 72%, rgba(0,0,0,1) 79%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+  opacity: 0.6;
   z-index: 100;
   color: #FFF;
 }
 .overlay-content{
   z-index: 101;
   position: relative;
-  padding-top: 60px;
+  padding-top: 80px;
   h2{
     color: #FFF;
     padding-bottom: 10px;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .description{
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 0.03em;
     color: #F9F9F9;
-    line-height: 1.6em;
+    line-height: 1.5em;
     font-weight: 300;
   }
 }
 .cover-content{
-  padding-top: 40vh;
+  padding-top: 6vh;
   width: 500px;
   margin-right: 20px;
-  height: 100vh;
+  height: 28vh;
   .mozk-logo{
     width: 130px;
     height: 130px;
@@ -113,9 +113,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', end
   }
   @media screen{
     @media (max-width: 500px){
+      height: auto;
       margin-right: 0px;
       padding-right: 0px;
-      padding-top: 30vh;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
       .mozk-logo{
         width: 100%;
         img{
@@ -135,7 +137,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', end
 .content-div{
   position: relative;
   .cover-image{
-    background: transparent url("../images/cover-photos/cover-photo-1.jpg") repeat scroll center center / cover;
+    background: transparent url("../images/cover-photos/hackerGirls--Bhavana-Teach.jpg") repeat scroll center center / cover;
     height: 500px;
   }
+}
+.activities{
+  position: relative;
+  .content{
+    margin-top: -100px;
+    z-index: 200;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px #333;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .what-we-do-header{
+    font-size: 2.5em;
+    color: #696969;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.6rem;
+  }
+  .list-item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .header{
+      font-size: 1.5em;
+      color: #333;
+    }
+  }
+}
+.links{
+  padding-bottom: 50px;
+  .downloads{
+    font-size: 2.5em;
+    color: #696969;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+    padding-left: 1.6rem;
+  }
+  .tile-item{
+    img{
+      width: 200px;
+      margin: auto;
+    }
+  }
+}
+.events{
+  
 }
